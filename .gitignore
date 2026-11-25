@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+*.key
+config.json
+.DS_Store
+
+CLAIM_DRAFT.md
+CLAIM_DRAFT*.md

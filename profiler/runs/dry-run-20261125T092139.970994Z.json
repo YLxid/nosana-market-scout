@@ -1,0 +1,62 @@
+{
+  "status": "not_measured",
+  "generated_at_utc": "2026-11-25T09:21:39.971017Z",
+  "note": "Dry run only. No Nosana deployment was made, no GPU was used, every timing below is null. Fill it in by running reproduce.sh with live credits.",
+  "combos": [
+    {
+      "id": "01-ollama-qwen3-8b-4090",
+      "schedule_s": null,
+      "image_pull_s": null,
+      "model_download_s": null,
+      "ttft_s": null,
+      "cache": null,
+      "cost_usd": null,
+      "node": null,
+      "deployment_id": null
+    },
+    {
+      "id": "02-vllm-qwen2.5-7b-3090",
+      "schedule_s": null,
+      "image_pull_s": null,
+      "model_download_s": null,
+      "ttft_s": null,
+      "cache": null,
+      "cost_usd": null,
+      "node": null,
+      "deployment_id": null
+    },
+    {
+      "id": "03-comfyui-flux-5090",
+      "schedule_s": null,
+      "image_pull_s": null,
+      "model_download_s": null,
+      "ttft_s": null,
+      "cache": null,
+      "cost_usd": null,
+      "node": null,
+      "deployment_id": null
+    },
+    {
+      "id": "04-whisper-large-v3-3090",
+      "schedule_s": null,
+      "image_pull_s": null,
+      "model_download_s": null,
+      "ttft_s": null,
+      "cache": null,
+      "cost_usd": null,
+      "node": null,
+      "deployment_id": null
+    },
+    {
+      "id": "05-vllm-nanonets-ocr-4090",
+      "schedule_s": null,
+      "image_pull_s": null,
+      "model_download_s": null,
+      "ttft_s": null,
+      "cache": null,
+      "cost_usd": null,
+      "node": null,
+      "deployment_id": null
+    }
+  ]
+}

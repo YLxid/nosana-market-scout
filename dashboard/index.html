@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosana Market Scout</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2em auto; padding: 0 1em; color: #111; }
+  h1 { font-size: 1.4em; }
+  .meta { color: #555; font-size: 0.9em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; font-size: 0.9em; }
+  th { background: #f0f0f0; }
+  .warn { color: #a00; font-weight: bold; }
+  .ok { color: #060; }
+  .muted { color: #555; }
+</style>
+</head>
+<body>
+<h1>Nosana Market Scout</h1>
+<p class="meta">Live GPU availability from the public Nosana API
+(<code>/reservations/gpus</code> + <code>/markets</code>). No API key.
+Data below is whatever <code>snapshots/latest.json</code> contains —
+check the timestamp before trusting it.</p>
+<p id="meta" class="meta">Loading snapshots/latest.json… (serve this folder
+with <code>python3 -m http.server</code> — opening the file directly
+will fail on fetch in most browsers.)</p>
+
+<h2>Focus GPUs</h2>
+<table id="focus">
+  <thead><tr><th>GPU</th><th>Status</th><th>Free / Nodes</th>
+  <th>Price $/h</th><th>Cheapest PREMIUM market</th><th>Note</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<h2>Warnings</h2>
+<ul id="warnings"></ul>
+
+<h2>Cheapest PREMIUM market by minimum VRAM (credit-safe)</h2>
+<table id="picks">
+  <thead><tr><th>Min VRAM</th><th>Market</th><th>Price $/h</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<p class="muted">Rules: credits only work on PREMIUM markets — COMMUNITY
+markets are excluded from the picks. A GPU class absent from the
+availability data has UNKNOWN availability, not zero. The
+<code>nodes</code> field in <code>/markets</code> is always empty and is
+never used for availability. See README.md for sources and limitations.</p>
+
+<script>
+fetch('../snapshots/latest.json')
+  .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(function (snap) {
+    document.getElementById('meta').textContent =
+      'Snapshot: ' + snap.generated_at_utc + ' (schema v' + snap.schema_version + ') — ' +
+      snap.markets.length + ' markets, ' + snap.gpus.length + ' GPU types.';
+    var tb = document.querySelector('#focus tbody');
+    snap.focus.forEach(function (f) {
+      var tr = document.createElement('tr');
+      var status = f.status === 'available' ? 'available' :
+        (f.status === 'no_free_hosts' ? '0 free — DO NOT DEPLOY' : 'not listed — unknown');
+      var cls = f.status === 'available' ? 'ok' : 'warn';
+      var free = f.available === null ? '—' : f.available + ' / ' + (f.nodes === null ? '—' : f.nodes);
+      var price = (f.price_min_usd_per_hour === undefined || f.price_min_usd_per_hour === null)
+        ? '—' : '$' + f.price_min_usd_per_hour + '–$' + f.price_max_usd_per_hour;
+      var pick = f.cheapest_premium_market
+        ? f.cheapest_premium_market.slug + ' ($' + f.cheapest_premium_market.usd_per_hour + '/h)'
+        : '—';
+      tr.innerHTML = '<td>' + f.gpu + '</td><td class="' + cls + '">' + status + '</td>' +
+        '<td>' + free + '</td><td>' + price + '</td><td>' + pick + '</td>' +
+        '<td>' + (f.note || '') + '</td>';
+      tb.appendChild(tr);
+    });
+    var ul = document.getElementById('warnings');
+    if (!snap.warnings.length) { ul.innerHTML = '<li class="ok">No warnings in this snapshot.</li>'; }
+    snap.warnings.forEach(function (w) {
+      var li = document.createElement('li');
+      li.className = 'warn'; li.textContent = w; ul.appendChild(li);
+    });
+    var pb = document.querySelector('#picks tbody');
+    Object.keys(snap.cheapest_premium_by_vram).forEach(function (vram) {
+      var p = snap.cheapest_premium_by_vram[vram];
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>&ge; ' + vram + ' GB</td><td>' + (p ? p.slug : '—') + '</td>' +
+        '<td>' + (p ? '$' + p.usd_per_hour : '—') + '</td>';
+      pb.appendChild(tr);
+    });
+  })
+  .catch(function (err) {
+    document.getElementById('meta').textContent =
+      'Could not load snapshots/latest.json (' + err.message + '). ' +
+      'Run: python3 scout.py --once, then serve this folder with python3 -m http.server.';
+  });
+</script>
+</body>
+</html>

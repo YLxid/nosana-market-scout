@@ -1,0 +1,1337 @@
+{
+  "cheapest_premium_by_vram": {
+    "12": {
+      "address": "EzuHhkrhmV98HWzREsgLenKj2iHdJgrKmzfL8psP8Aso",
+      "slug": "nvidia-4070",
+      "usd_per_hour": 0.0873,
+      "vram_gb": 12
+    },
+    "24": {
+      "address": "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ",
+      "slug": "nvidia-3090",
+      "usd_per_hour": 0.1745,
+      "vram_gb": 24
+    },
+    "32": {
+      "address": "BLqSzPzcXMX5gseNXE4Ma45f31Eo6tNFVYoRmPG7kxP2",
+      "slug": "nvidia-a40",
+      "usd_per_hour": 0.3636,
+      "vram_gb": 48
+    }
+  },
+  "focus": [
+    {
+      "available": 14,
+      "cheapest_premium_market": {
+        "address": "97G9NnvBDQ2WpKu6fasoMsAKmfj63C9rhysJnkeWodAf",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-4090",
+        "usd_per_hour": 0.3636
+      },
+      "gpu": "RTX 4090",
+      "min_vram_gb": 24,
+      "nodes": 71,
+      "price_max_usd_per_hour": 0.3636,
+      "price_min_usd_per_hour": 0.1,
+      "status": "available",
+      "working": 36
+    },
+    {
+      "available": 19,
+      "cheapest_premium_market": {
+        "address": "6Xt8hgVLLL2PSHC9NtJP8E8oTdA5ZJc95hZEnHcdqKqb",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-5090",
+        "usd_per_hour": 0.4545
+      },
+      "gpu": "RTX 5090",
+      "min_vram_gb": 32,
+      "nodes": 48,
+      "price_max_usd_per_hour": 0.4545,
+      "price_min_usd_per_hour": 0.4545,
+      "status": "available",
+      "working": 27
+    },
+    {
+      "available": 13,
+      "cheapest_premium_market": {
+        "address": "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-3090",
+        "usd_per_hour": 0.1745
+      },
+      "gpu": "RTX 3090",
+      "min_vram_gb": 24,
+      "nodes": 42,
+      "price_max_usd_per_hour": 0.1745,
+      "price_min_usd_per_hour": 0.1745,
+      "status": "available",
+      "working": 15
+    },
+    {
+      "available": 0,
+      "cheapest_premium_market": {
+        "address": "7AtiXMSH6R1jjBxrcYjehCkkSF7zvYWte63gwEDBcGHq",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-3060",
+        "usd_per_hour": 0.0436
+      },
+      "gpu": "RTX 3060",
+      "min_vram_gb": 12,
+      "nodes": 7,
+      "note": "0 free hosts right now \u2014 do not deploy.",
+      "price_max_usd_per_hour": 0.0436,
+      "price_min_usd_per_hour": 0.0436,
+      "status": "no_free_hosts",
+      "working": 6
+    },
+    {
+      "available": null,
+      "cheapest_premium_market": {
+        "address": "F3aGGSMb73XHbJbDXVbcXo7iYM9fyevvAZGQfwgrnWtB",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-a100-40gb",
+        "usd_per_hour": 0.5545
+      },
+      "gpu": "A100 40GB",
+      "min_vram_gb": 40,
+      "nodes": null,
+      "note": "In /markets but NOT in /reservations/gpus: availability unknown, do not assume free hosts.",
+      "status": "not_listed"
+    },
+    {
+      "available": null,
+      "cheapest_premium_market": {
+        "address": "GLJHzqRN9fKGBsvsFzmGnaQGknUtLN1dqaFR8n3YdM22",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-a100-80gb",
+        "usd_per_hour": 0.8181
+      },
+      "gpu": "A100 80GB",
+      "min_vram_gb": 80,
+      "nodes": null,
+      "note": "In /markets but NOT in /reservations/gpus: availability unknown, do not assume free hosts.",
+      "status": "not_listed"
+    },
+    {
+      "available": null,
+      "cheapest_premium_market": {
+        "address": "Crop49jpc7prcgAcS82WbWyGHwbN5GgDym3uFbxxCTZg",
+        "cached_ollama": true,
+        "cached_vllm": true,
+        "slug": "nvidia-h100",
+        "usd_per_hour": 1.3636
+      },
+      "gpu": "H100",
+      "min_vram_gb": 80,
+      "nodes": null,
+      "note": "In /markets but NOT in /reservations/gpus: availability unknown, do not assume free hosts.",
+      "status": "not_listed"
+    }
+  ],
+  "generated_at_utc": "2026-11-25T09:26:27.547360Z",
+  "gpus": [
+    {
+      "available": 14,
+      "market_addresses": [
+        "5CRDSHGzMtGCohobfvLU3p1h7uKvAzuLpGKrfutLz3U5",
+        "97G9NnvBDQ2WpKu6fasoMsAKmfj63C9rhysJnkeWodAf"
+      ],
+      "name": "NVIDIA GeForce RTX 4090",
+      "nodes": 71,
+      "price_max_usd_per_hour": 0.3636,
+      "price_min_usd_per_hour": 0.1,
+      "vram_gb": 24,
+      "working": 36
+    },
+    {
+      "available": 19,
+      "market_addresses": [
+        "6Xt8hgVLLL2PSHC9NtJP8E8oTdA5ZJc95hZEnHcdqKqb"
+      ],
+      "name": "NVIDIA GeForce RTX 5090",
+      "nodes": 48,
+      "price_max_usd_per_hour": 0.4545,
+      "price_min_usd_per_hour": 0.4545,
+      "vram_gb": 32,
+      "working": 27
+    },
+    {
+      "available": 13,
+      "market_addresses": [
+        "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ"
+      ],
+      "name": "NVIDIA GeForce RTX 3090",
+      "nodes": 42,
+      "price_max_usd_per_hour": 0.1745,
+      "price_min_usd_per_hour": 0.1745,
+      "vram_gb": 24,
+      "working": 15
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "Ekro9NTNqLbnMkN7x7y2rY9AeTkazcHj2PPaTxT1Cogz",
+        "EuYwNdSDduvFuTTS4fEgNL23rZRaTMbecM1J6fJJoQR1"
+      ],
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "nodes": 30,
+      "price_max_usd_per_hour": 2.13,
+      "price_min_usd_per_hour": 2.0391,
+      "vram_gb": 95,
+      "working": 29
+    },
+    {
+      "available": 2,
+      "market_addresses": [
+        "9HnJacS25TnErsKMYJmKqWeCAMYuwY7gzhz9Eqhp5VE7"
+      ],
+      "name": "NVIDIA GeForce RTX 5080",
+      "nodes": 27,
+      "price_max_usd_per_hour": 0.1818,
+      "price_min_usd_per_hour": 0.1818,
+      "vram_gb": 16,
+      "working": 24
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "7RepDm4Xt9k6qV5oiSHvi8oBoty4Q2tfBGnCYjFLj6vA"
+      ],
+      "name": "NVIDIA GeForce RTX 3080",
+      "nodes": 25,
+      "price_max_usd_per_hour": 0.0873,
+      "price_min_usd_per_hour": 0.0873,
+      "vram_gb": 10,
+      "working": 24
+    },
+    {
+      "available": 4,
+      "market_addresses": [
+        "5eX3kWkrcbwejEc1svbfP4F7NKYjtPDuyU5KnV1hUBKg"
+      ],
+      "name": "NVIDIA GeForce RTX 5070",
+      "nodes": 23,
+      "price_max_usd_per_hour": 0.1364,
+      "price_min_usd_per_hour": 0.1364,
+      "vram_gb": 12,
+      "working": 15
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "7AtiXMSH6R1jjBxrcYjehCkkSF7zvYWte63gwEDBcGHq"
+      ],
+      "name": "NVIDIA GeForce RTX 3060",
+      "nodes": 7,
+      "price_max_usd_per_hour": 0.0436,
+      "price_min_usd_per_hour": 0.0436,
+      "vram_gb": 12,
+      "working": 6
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "5eX3kWkrcbwejEc1svbfP4F7NKYjtPDuyU5KnV1hUBKg"
+      ],
+      "name": "NVIDIA GeForce RTX 5070 Ti",
+      "nodes": 7,
+      "price_max_usd_per_hour": 0.1364,
+      "price_min_usd_per_hour": 0.1364,
+      "vram_gb": 16,
+      "working": 2
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "7AtiXMSH6R1jjBxrcYjehCkkSF7zvYWte63gwEDBcGHq"
+      ],
+      "name": "NVIDIA GeForce RTX 3060 Ti",
+      "nodes": 5,
+      "price_max_usd_per_hour": 0.0436,
+      "price_min_usd_per_hour": 0.0436,
+      "vram_gb": 8,
+      "working": 5
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "7RepDm4Xt9k6qV5oiSHvi8oBoty4Q2tfBGnCYjFLj6vA"
+      ],
+      "name": "NVIDIA GeForce RTX 3080 Ti",
+      "nodes": 5,
+      "price_max_usd_per_hour": 0.0873,
+      "price_min_usd_per_hour": 0.0873,
+      "vram_gb": 12,
+      "working": 5
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "RXP7JK8MTY4uPJng4UjC9ZJdDDSG6wGr8pvVf3mwgXF"
+      ],
+      "name": "NVIDIA GeForce RTX 3070",
+      "nodes": 4,
+      "price_max_usd_per_hour": 0.0727,
+      "price_min_usd_per_hour": 0.0727,
+      "vram_gb": 8,
+      "working": 2
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "77wdaAuYVxBW5u2QiqddkAzoBZ5cuKxH9ZCbx5HfFUb2"
+      ],
+      "name": "NVIDIA GeForce RTX 4080",
+      "nodes": 4,
+      "price_max_usd_per_hour": 0.1455,
+      "price_min_usd_per_hour": 0.1455,
+      "vram_gb": 16,
+      "working": 3
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "RXP7JK8MTY4uPJng4UjC9ZJdDDSG6wGr8pvVf3mwgXF"
+      ],
+      "name": "NVIDIA GeForce RTX 3070 Ti",
+      "nodes": 3,
+      "price_max_usd_per_hour": 0.0727,
+      "price_min_usd_per_hour": 0.0727,
+      "vram_gb": 8,
+      "working": 2
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "47LQHZwT7gfVoBDYnRYhsYv6vKk8a1oW3Y3SdHAp1gTr",
+        "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ"
+      ],
+      "name": "NVIDIA GeForce RTX 4060",
+      "nodes": 3,
+      "price_max_usd_per_hour": 0.1745,
+      "price_min_usd_per_hour": 0.0582,
+      "vram_gb": 8,
+      "working": 1
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "EzuHhkrhmV98HWzREsgLenKj2iHdJgrKmzfL8psP8Aso"
+      ],
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "nodes": 3,
+      "price_max_usd_per_hour": 0.0873,
+      "price_min_usd_per_hour": 0.0873,
+      "vram_gb": 12,
+      "working": 3
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "77wdaAuYVxBW5u2QiqddkAzoBZ5cuKxH9ZCbx5HfFUb2"
+      ],
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "nodes": 3,
+      "price_max_usd_per_hour": 0.1455,
+      "price_min_usd_per_hour": 0.1455,
+      "vram_gb": 16,
+      "working": 3
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ"
+      ],
+      "name": "NVIDIA GeForce RTX 3090 Ti",
+      "nodes": 2,
+      "price_max_usd_per_hour": 0.1745,
+      "price_min_usd_per_hour": 0.1745,
+      "vram_gb": 24,
+      "working": 0
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "EzuHhkrhmV98HWzREsgLenKj2iHdJgrKmzfL8psP8Aso"
+      ],
+      "name": "NVIDIA GeForce RTX 4070",
+      "nodes": 2,
+      "price_max_usd_per_hour": 0.0873,
+      "price_min_usd_per_hour": 0.0873,
+      "vram_gb": 12,
+      "working": 2
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "6eMivCx49anWFYwNgg8KNJQfSJYB5nBdif8CK6z52dem"
+      ],
+      "name": "NVIDIA RTX 6000 Ada Generation",
+      "nodes": 2,
+      "price_max_usd_per_hour": 0.6364,
+      "price_min_usd_per_hour": 0.6364,
+      "vram_gb": 48,
+      "working": 1
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "EjryZ6XEthz3z7nnLfjXBYafyn7VyHgChfbfM47LfAao"
+      ],
+      "name": "NVIDIA RTX A6000",
+      "nodes": 2,
+      "price_max_usd_per_hour": 0.3636,
+      "price_min_usd_per_hour": 0.3636,
+      "vram_gb": 48,
+      "working": 1
+    },
+    {
+      "available": 1,
+      "market_addresses": [
+        "47LQHZwT7gfVoBDYnRYhsYv6vKk8a1oW3Y3SdHAp1gTr"
+      ],
+      "name": "NVIDIA GeForce RTX 4060 Ti",
+      "nodes": 1,
+      "price_max_usd_per_hour": 0.0582,
+      "price_min_usd_per_hour": 0.0582,
+      "vram_gb": 8,
+      "working": 0
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "EzuHhkrhmV98HWzREsgLenKj2iHdJgrKmzfL8psP8Aso"
+      ],
+      "name": "NVIDIA GeForce RTX 4070 SUPER",
+      "nodes": 1,
+      "price_max_usd_per_hour": 0.0873,
+      "price_min_usd_per_hour": 0.0873,
+      "vram_gb": 12,
+      "working": 1
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "7fnuvPYzfd961iRDPRgMSKLrUf1QjTGnn7viu3P12Zuc"
+      ],
+      "name": "NVIDIA RTX A4000",
+      "nodes": 1,
+      "price_max_usd_per_hour": 0.1164,
+      "price_min_usd_per_hour": 0.1164,
+      "vram_gb": 16,
+      "working": 1
+    },
+    {
+      "available": 0,
+      "market_addresses": [
+        "4uBye3vJ1FAYukDdrvqQ36MZZZxqW3o8utWu8fyomRuN"
+      ],
+      "name": "NVIDIA RTX A5000",
+      "nodes": 1,
+      "price_max_usd_per_hour": 0.1818,
+      "price_min_usd_per_hour": 0.1818,
+      "vram_gb": 24,
+      "working": 1
+    }
+  ],
+  "markets": [
+    {
+      "address": "47LQHZwT7gfVoBDYnRYhsYv6vKk8a1oW3Y3SdHAp1gTr",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4060",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-4060",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.0582,
+      "vram_gb": 8
+    },
+    {
+      "address": "BykxcqsPpMLo2nYZJfFHSUwi1fJNWDKFYi5idJfQ4hgk",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4000/A4000 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a4000-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0873,
+      "vram_gb": null
+    },
+    {
+      "address": "37VPcEfrA34vLRygFQd7bWiosBwv3a5jPv4hcXdumytC",
+      "cached_ollama": false,
+      "cached_vllm": false,
+      "name": "NVIDIA Pro 6000 (6x)",
+      "required_images": [],
+      "slug": "nvidia-pro6000-6x",
+      "type": "PREMIUM",
+      "usd_per_hour": 12,
+      "vram_gb": 576
+    },
+    {
+      "address": "RXP7JK8MTY4uPJng4UjC9ZJdDDSG6wGr8pvVf3mwgXF",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3070",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3070",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.0727,
+      "vram_gb": 8
+    },
+    {
+      "address": "9HnJacS25TnErsKMYJmKqWeCAMYuwY7gzhz9Eqhp5VE7",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5080",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-5080",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1818,
+      "vram_gb": 16
+    },
+    {
+      "address": "7AtiXMSH6R1jjBxrcYjehCkkSF7zvYWte63gwEDBcGHq",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3060",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-3060",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.0436,
+      "vram_gb": 8
+    },
+    {
+      "address": "6Xt8hgVLLL2PSHC9NtJP8E8oTdA5ZJc95hZEnHcdqKqb",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5090",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/vllm/vllm-openai:v0.26.0"
+      ],
+      "slug": "nvidia-5090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.4545,
+      "vram_gb": 32
+    },
+    {
+      "address": "An4tqwD3mTzRipAdVxqSNrTtGfiqRh9DSgUjZ86zNrDa",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "zephyr-skyline NVIDIA 4090",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "zephyr-skyline-4090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.35,
+      "vram_gb": 24
+    },
+    {
+      "address": "8pr3btRVcbqqGxaZspd18QWm41eByTjZR1cB58nVWiNg",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5090 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/vllm/vllm-openai:v0.26.0"
+      ],
+      "slug": "nvidia-5090-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.4545,
+      "vram_gb": null
+    },
+    {
+      "address": "CA5pMpqkYFKtme7K31pNB1s62X2SdhEv1nN9RdxKCpuQ",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3090",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1745,
+      "vram_gb": 24
+    },
+    {
+      "address": "9fgU7Btd5gXB3xzAFmT322KdkdUuMjX7GG1LeNT5qFj4",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5080 Community",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-5080-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.1364,
+      "vram_gb": null
+    },
+    {
+      "address": "5eX3kWkrcbwejEc1svbfP4F7NKYjtPDuyU5KnV1hUBKg",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5070",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-5070",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1364,
+      "vram_gb": 12
+    },
+    {
+      "address": "3XGECQon74HQwPJuZjgCwqdQ5Nt3wktZ9fcavcDN9qB2",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "Enterprise 8xA5000",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "ghcr.io/ggml-org/llama.cpp:server-cuda12"
+      ],
+      "slug": "nvidia-8x-a5000",
+      "type": "OTHER",
+      "usd_per_hour": null,
+      "vram_gb": null
+    },
+    {
+      "address": "9qTcReKjb7LKndq2J4pxd2gCgC9ux3z2jF4oUTWhQovZ",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A100 80GB Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a100-80gb-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.61364,
+      "vram_gb": null
+    },
+    {
+      "address": "EuYwNdSDduvFuTTS4fEgNL23rZRaTMbecM1J6fJJoQR1",
+      "cached_ollama": false,
+      "cached_vllm": false,
+      "name": "NVIDIA Pro 6000 Server Edition (CC)",
+      "required_images": [],
+      "slug": "nvidia-pro-6000-cc",
+      "type": "PREMIUM",
+      "usd_per_hour": 2.13,
+      "vram_gb": 96
+    },
+    {
+      "address": "5CRDSHGzMtGCohobfvLU3p1h7uKvAzuLpGKrfutLz3U5",
+      "cached_ollama": false,
+      "cached_vllm": false,
+      "name": "(Reserved)",
+      "required_images": [],
+      "slug": "4090-reserved",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1,
+      "vram_gb": 999
+    },
+    {
+      "address": "HBxyYe4gTzuutWL991vKL6isqwhGqApELAfoRiZgW1Sw",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5000/A5000 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a5000-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.1717,
+      "vram_gb": null
+    },
+    {
+      "address": "7fnuvPYzfd961iRDPRgMSKLrUf1QjTGnn7viu3P12Zuc",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4000/A4000",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-a4000",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1164,
+      "vram_gb": 16
+    },
+    {
+      "address": "Dcwz62TisNbWuto6KJM2EGYGVKnHbdZGVGmgLASzsXy8",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4090 Community",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-4090-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.3636,
+      "vram_gb": null
+    },
+    {
+      "address": "31P9d5ahEY9iSmZuXJ2xwJsbRztFK5AUCdkvgziUM3vn",
+      "cached_ollama": false,
+      "cached_vllm": false,
+      "name": "ember-drift NVIDIA 4090",
+      "required_images": [
+        "docker.io/nosana/anti-spoof:1.0.0"
+      ],
+      "slug": "ember-drift-4090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.37,
+      "vram_gb": 24
+    },
+    {
+      "address": "BLqSzPzcXMX5gseNXE4Ma45f31Eo6tNFVYoRmPG7kxP2",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A40",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-a40",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.3636,
+      "vram_gb": 48
+    },
+    {
+      "address": "2NTfTR64rEH8avzNsxExeNKSXNZfRHTg1JZKmyqbR8LL",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4060 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-4060-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0436,
+      "vram_gb": null
+    },
+    {
+      "address": "HanragNudL4S4zFtpLQv85dn6QbdzCm7SNEWEb9sRp17",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4080 Community",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-4080-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.1091,
+      "vram_gb": null
+    },
+    {
+      "address": "77wdaAuYVxBW5u2QiqddkAzoBZ5cuKxH9ZCbx5HfFUb2",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4080",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-4080",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1455,
+      "vram_gb": 16
+    },
+    {
+      "address": "741d2jZmNreNVyrLCgGkvVGx1Wx3FjumXXPefd8MX83J",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3080 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3080-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0655,
+      "vram_gb": null
+    },
+    {
+      "address": "6xJakjtNhCSRQJf5Lk79E846w4gyvs83cWz8Xd2cKnmH",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A100 40GB Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a100-40gb-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.41591,
+      "vram_gb": null
+    },
+    {
+      "address": "C8JnyH6qhid3EaovSwb8JTkwAGP5n6GGqkktrazuKDqC",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "silent-ridge NVIDIA 4090",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "silent-ridge-4090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.2909,
+      "vram_gb": 24
+    },
+    {
+      "address": "5DTW69bSjrGvNWWnGco3xi5EZTpE9o8NSPFzbw71HByp",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3070 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3070-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0545,
+      "vram_gb": null
+    },
+    {
+      "address": "97G9NnvBDQ2WpKu6fasoMsAKmfj63C9rhysJnkeWodAf",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4090",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "registry.hub.docker.com/ollama/ollama:0.15.4"
+      ],
+      "slug": "nvidia-4090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.3636,
+      "vram_gb": 24
+    },
+    {
+      "address": "3tB46gYRURjyhmdQkTBqjhfT7rR2h6qFCPC2jtHwuorA",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA Pro 6000 (WE) Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-pro6000-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.6,
+      "vram_gb": null
+    },
+    {
+      "address": "Crop49jpc7prcgAcS82WbWyGHwbN5GgDym3uFbxxCTZg",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA H100",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-h100",
+      "type": "PREMIUM",
+      "usd_per_hour": 1.3636,
+      "vram_gb": 80
+    },
+    {
+      "address": "Bk5E3zN6xkxZS2nCQa3oTN6zjYmzFbXTVtnowUzH71zu",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4070 Community",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-4070-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0655,
+      "vram_gb": null
+    },
+    {
+      "address": "EjryZ6XEthz3z7nnLfjXBYafyn7VyHgChfbfM47LfAao",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A6000",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-a6000",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.3636,
+      "vram_gb": 48
+    },
+    {
+      "address": "985pQEVPn7SL5os3Z2iNwBoX4f9Bva334dENweXWyt9t",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3090 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3090-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.1309,
+      "vram_gb": null
+    },
+    {
+      "address": "7RepDm4Xt9k6qV5oiSHvi8oBoty4Q2tfBGnCYjFLj6vA",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3080",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3080",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.0873,
+      "vram_gb": 10
+    },
+    {
+      "address": "62bAk2ppEL2HpotfPZsscSq4CGEfY6VEqD5dQQuTo7JC",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 3060 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-3060-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.0327,
+      "vram_gb": null
+    },
+    {
+      "address": "4uBye3vJ1FAYukDdrvqQ36MZZZxqW3o8utWu8fyomRuN",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5000/A5000",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a5000",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.1818,
+      "vram_gb": 24
+    },
+    {
+      "address": "FNchga9tXmcQU1DXCWapysjMCgUioiY6vQAb38Ts612K",
+      "cached_ollama": false,
+      "cached_vllm": false,
+      "name": "NVIDIA 4090 SEV TEE",
+      "required_images": [],
+      "slug": "frost-cascade-4090",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.5,
+      "vram_gb": null
+    },
+    {
+      "address": "6eMivCx49anWFYwNgg8KNJQfSJYB5nBdif8CK6z52dem",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 6000 Ada",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-6000-ada",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.6364,
+      "vram_gb": 48
+    },
+    {
+      "address": "F3aGGSMb73XHbJbDXVbcXo7iYM9fyevvAZGQfwgrnWtB",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A100 40GB",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a100-40gb",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.5545,
+      "vram_gb": 40
+    },
+    {
+      "address": "GLJHzqRN9fKGBsvsFzmGnaQGknUtLN1dqaFR8n3YdM22",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A100 80GB",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a100-80gb",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.8181,
+      "vram_gb": 80
+    },
+    {
+      "address": "8XT6GbHuEVEdxatFsTYsKKeFB6jAGcJPrezA5fF1p6fq",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A6000 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a6000-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.2727,
+      "vram_gb": null
+    },
+    {
+      "address": "8kGjraXnXirSQcgjxTbFBK7QTBVz9fm9ufSRVr3DqBTV",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA A40 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-a40-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.27273,
+      "vram_gb": null
+    },
+    {
+      "address": "HnCwNsk1FTREgmp3BQ1A9WBE9UqzCkfEfqPv9BybYA2y",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 5070 Community",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-5070-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.1027,
+      "vram_gb": null
+    },
+    {
+      "address": "5ZfPkACuAZgZVF1cobN4CeJdoXn2ze3azwtSv5ah9otV",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 6000 Ada Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-6000-ada-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 0.4773,
+      "vram_gb": null
+    },
+    {
+      "address": "Ekro9NTNqLbnMkN7x7y2rY9AeTkazcHj2PPaTxT1Cogz",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA Pro 6000 (SOC2)",
+      "required_images": [
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/vllm/vllm-openai:v0.10.2",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/ollama/ollama:0.32.6"
+      ],
+      "slug": "nvidia-pro6000",
+      "type": "PREMIUM",
+      "usd_per_hour": 2.0391,
+      "vram_gb": 96
+    },
+    {
+      "address": "EzuHhkrhmV98HWzREsgLenKj2iHdJgrKmzfL8psP8Aso",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA 4070",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-4070",
+      "type": "PREMIUM",
+      "usd_per_hour": 0.0873,
+      "vram_gb": 12
+    },
+    {
+      "address": "D9Pv7LthkwSYVJo5iGUPsAiosGwARj7eHTntuWFR1MK2",
+      "cached_ollama": true,
+      "cached_vllm": true,
+      "name": "NVIDIA H100 Community",
+      "required_images": [
+        "docker.io/tensorflow/tensorflow:2.17.0-gpu-jupyter",
+        "docker.io/nosana/anti-spoof:1.0.0",
+        "docker.io/vllm/vllm-openai:v0.9.2",
+        "docker.io/ollama/ollama:0.32.6",
+        "docker.io/hoomanhq/oneclickllm:ollama01",
+        "registry.hub.docker.com/ollama/ollama:0.15.4",
+        "docker.io/vllm/vllm-openai:v0.10.2"
+      ],
+      "slug": "nvidia-h100-community",
+      "type": "COMMUNITY",
+      "usd_per_hour": 1.0227,
+      "vram_gb": null
+    }
+  ],
+  "notes": [
+    "/markets `nodes` is always an empty list; availability comes only from /reservations/gpus.",
+    "COMMUNITY markets are excluded from cheapest-PREMIUM picks: credits only work on PREMIUM markets.",
+    "A GPU class absent from /reservations/gpus has UNKNOWN availability, not zero availability."
+  ],
+  "schema_version": 1,
+  "sources": {
+    "gpus": {
+      "error": null,
+      "http_status": 200,
+      "url": "https://api.nosana.com/reservations/gpus"
+    },
+    "markets": {
+      "error": null,
+      "http_status": 200,
+      "url": "https://api.nosana.com/markets"
+    }
+  },
+  "tool": "nosana-market-scout",
+  "warnings": [
+    "RTX 3060: 0 free hosts \u2014 DO NOT DEPLOY.",
+    "A100 40GB: NOT LISTED in availability data \u2014 do not deploy assuming free hosts.",
+    "A100 80GB: NOT LISTED in availability data \u2014 do not deploy assuming free hosts.",
+    "H100: NOT LISTED in availability data \u2014 do not deploy assuming free hosts."
+  ]
+}
